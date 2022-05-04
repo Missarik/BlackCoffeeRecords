@@ -13,6 +13,9 @@
   <title>Black Coffee Records | Delivery Address</title>
 </head>
 <script>
+
+  alert("Relax. Minix ha nohodlok dettalji. Ghamilta biex naqla 4 marki.");
+
   function validate() {
     var name = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
@@ -23,34 +26,30 @@
     var poscode = document.getElementById("postcode").value;
 
     if (name == "") {
-      alert("First Name must not be empty");
-      return false;
-    } else if (lname == "") {
-      alert("Surname must not be empty");
-      return false;
-    } else if (address == "") {
-      alert("Address must not be empty");
-      return false;
-    } else if (email == "") {
-      alert("Email must not be empty");
-      return false;
-    } else if (city == "") {
-      alert("City must not be empty");
-      return false;
-    } else if (country == "") {
-      alert("Country must not be empty");
-      return false;
-    } else if (postcode == "") {
-      alert("poscode must not be empty");
-      return false;
-    }
-    else{
-      redirect();
-    }
+        alert("First Name must not be empty");
+        return false;
+      } else if (lname == "") {
+        alert("Surname must not be empty");
+        return false;
+      } else if (address == "") {
+        alert("Address must not be empty");
+        return false;
+      } else if (email == "") {
+        alert("Email must not be empty");
+        return false;
+      } else if (city == "") {
+        alert("City must not be empty");
+        return false;
+      } else if (country == "") {
+        alert("Country must not be empty");
+        return false;
+      } else if (postcode == "") {
+        alert("poscode must not be empty");
+        return false;
       }
-
-    function redirect() {
-      location.replace("billing.html");
+      else{
+        redirect();
+      }
     }
 
 </script>
